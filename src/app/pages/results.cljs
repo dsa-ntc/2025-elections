@@ -24,7 +24,7 @@
      [:a.header-logo-link {:href "https://electoral.dsausa.org/"
                            :target "_blank"
                            :rel "noopener noreferrer"}
-      [:img {:src "/img/nec-logo_white-transparent.png"
+      [:img {:src "./img/nec-logo_white-transparent.png"
              :alt "National Electoral Commission"}]]
      [:h1 "DSA Election Night 2025"]
      [:p.subtitle "Real-time results for DSA’s nationally-endorsed candidates and high profile locally-endorsed candidates."]
@@ -76,7 +76,7 @@
    [:a.footer-logo-link {:href "https://electoral.dsausa.org/"
                          :target "_blank"
                          :rel "noopener noreferrer"}
-    [:img.footer-logo {:src "/img/nec-logo_white-transparent.png"
+    [:img.footer-logo {:src "./img/nec-logo_white-transparent.png"
                        :alt "National Electoral Commission"}]]
    [:p "Data updates every 30 seconds"]
    [:p
