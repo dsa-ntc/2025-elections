@@ -1,0 +1,28 @@
+{
+  "name": "dsa-election-night-2025",
+  "version": "1.0.0",
+  "description": "DSA Election Night 2025 Results Tracker",
+  "scripts": {
+    "start": "dotenv -e .env -- shadow-cljs watch app",
+    "build": "npm run clean && dotenv -e .env -- shadow-cljs release app",
+    "clean": "rimraf public/js",
+    "server": "dotenv -e .env -- shadow-cljs start"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "shadow-cljs": "^2.27.5"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^11.0.0",
+    "rimraf": "^5.0.5"
+  },
+  "keywords": [
+    "dsa",
+    "elections",
+    "clojurescript",
+    "reagent"
+  ],
+  "author": "DSA National Electoral Commission",
+  "license": "MIT"
+}
