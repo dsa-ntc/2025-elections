@@ -584,10 +584,6 @@ a.candidate-chapter:hover {
   .candidate-card {
     padding: var(--spacing-sm);
   }
-
-  .vote-results {
-    align-items: flex-start;
-  }
 }
 
 /* Utilities */
