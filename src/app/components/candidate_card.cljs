@@ -1,15 +1,29 @@
 (ns app.components.candidate-card)
 
-(defn vote-display [{:keys [vote-percentage status ballots-counted]}]
+(defn format-poll-close-time [iso-datetime]
+  "Formats ISO datetime string to a human-readable format with timezone"
+  (when iso-datetime
+    (let [date (js/Date. iso-datetime)
+          options #js {:hour "numeric"
+                       :minute "2-digit"
+                       :timeZoneName "short"}]
+      (.toLocaleString date "en-US" options))))
+
+(defn vote-display [{:keys [vote-percentage status ballots-counted poll-close-time]}]
   (if vote-percentage
     [:div.vote-results
      [:div.vote-percentage
       (if vote-percentage
         (str (.toFixed (js/Number vote-percentage) 1) "%")
         "—")]
-     (when ballots-counted
+     (when (or ballots-counted poll-close-time)
        [:div.ballots-counted
-        (str (.toLocaleString (* 100 (js/Number ballots-counted))) "% reporting")])]
+        (str
+         (when poll-close-time
+           (str "Polls close: " (format-poll-close-time poll-close-time)))
+         (when (and ballots-counted poll-close-time) " • ")
+         (when ballots-counted
+           (str (.toLocaleString (* 100 (js/Number ballots-counted))) "% reporting")))])]
     [:div.vote-results.no-results
      [:div.status-label status]]))
 

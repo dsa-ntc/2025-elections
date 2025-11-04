@@ -9,6 +9,10 @@ out/
 target/
 .shadow-cljs/
 
+# Cache
+cache/
+public/data/races.json
+
 # Environment variables (DO NOT COMMIT!)
 .env
 .env.local
