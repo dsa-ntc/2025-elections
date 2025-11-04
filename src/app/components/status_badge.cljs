@@ -12,7 +12,10 @@
                "Loss" "fa-solid fa-circle-xmark"
                "Running" "fa-solid fa-clock"
                "Too Close to Call" "fa-solid fa-circle-question"
-               "fa-solid fa-clock")]
+               "fa-solid fa-clock")
+        display-text (case status
+                       "Running" "In Progress"
+                       status)]
     [:div {:class (str "status-badge " status-class)}
      [:i {:class icon}]
-     [:span status]]))
+     [:span display-text]]))
