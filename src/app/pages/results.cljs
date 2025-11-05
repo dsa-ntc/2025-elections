@@ -29,7 +29,7 @@
      [:h1 "DSA Election Night 2025"]
      [:p.subtitle "Real-time results for DSA’s nationally-endorsed candidates and high profile locally-endorsed candidates."]
      [:div.header-buttons
-      [:a.join-dsa-link {:href "https://act.dsausa.org/donate/membership/"
+      [:a.join-dsa-link {:href "https://act.dsausa.org/donate/membership/?source=habibi"
                          :target "_blank"
                          :rel "noopener noreferrer"}
        "build DSA with us habibi"]
