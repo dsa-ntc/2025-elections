@@ -1,5 +1,5 @@
 {
-  "cached_at": "2025-11-05T01:23:33.052Z",
+  "cached_at": "2025-11-05T01:46:12.893Z",
   "records": [
     {
       "id": "rec31zclrGxqriRp2",
@@ -292,7 +292,7 @@
         "Candidate Name": "Robin Wonsley",
         "State": "MN",
         "Endorsing Chapter": "Twin Cities",
-        "Office": "Minneapolis City Council, Ward 9",
+        "Office": "Minneapolis City Council, Ward 2",
         "Office Type": "Municipal",
         "Status": "Running",
         "Vote Percentage": "0",
@@ -336,7 +336,7 @@
         "Candidate Name": "Jorge DeFendini",
         "State": "NY",
         "Endorsing Chapter": "Ithaca",
-        "Office": "Ithaca Common Council Ward 5",
+        "Office": "Ithaca Common Council Ward 1",
         "Office Type": "Municipal",
         "Status": "Running",
         "Vote Percentage": "0",
@@ -425,13 +425,13 @@
         "Office": "Detroit City Council, District 7",
         "Office Type": "Municipal",
         "Status": "Running",
-        "Vote Percentage": "0",
+        "Vote Percentage": "66.58",
         "Results Link": "https://detroitmi.gov/departments/elections",
         "Endorsement Blog Post": "https://electoral.dsausa.org/denzel-mccampbell/",
         "Display Order": 14,
         "Candidate Photo URL": "./img/candidates/mccampbell 1.png\n",
         "Chapter URL": "https://www.metrodetroitdsa.com/",
-        "Ballots Counted": 0,
+        "Ballots Counted": 0.01,
         "poll close time": "2025-11-05T01:00:00.000Z",
         "single select poll close (for kanban)": "1700 pst",
         "Alt Text": "DSA-endorsed Denzel McCampbell is pictured wearing a sharp dark blue suit and tie and grinning."
