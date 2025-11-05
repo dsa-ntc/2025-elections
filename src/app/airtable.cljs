@@ -22,6 +22,7 @@
      :office-type (or (get fields (keyword "Office Type")) "Municipal")
      :status (or (get fields (keyword "Status")) "Running")
      :vote-percentage (get fields (keyword "Vote Percentage"))
+     :results-override (get fields (keyword "Results Override"))
      :vote-count (get fields (keyword "Vote Count"))
      :total-votes-cast (get fields (keyword "Total Votes Cast"))
      :ballots-counted (get fields (keyword "Ballots Counted"))
