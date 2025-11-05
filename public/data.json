@@ -1,5 +1,5 @@
 {
-  "cached_at": "2025-11-05T01:13:51.429Z",
+  "cached_at": "2025-11-05T01:23:33.052Z",
   "records": [
     {
       "id": "rec31zclrGxqriRp2",
@@ -126,7 +126,7 @@
         "Display Order": 20,
         "Candidate Photo URL": "./img/candidates/cook 1.png\n",
         "Chapter URL": "https://tacomadsa.org/",
-        "Ballots Counted": 0,
+        "Ballots Counted": 0.01,
         "poll close time": "2025-11-05T04:00:00.000Z",
         "single select poll close (for kanban)": "2000 pst",
         "Alt Text": "DSA-endorsed Zev Cook is pictured wearing a sharp suit and watermelon earrings."
