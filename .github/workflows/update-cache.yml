@@ -1,18 +1,21 @@
 name: Update Airtable Cache
 
 on:
-  # Run every 5 minutes (GitHub Actions minimum recommended interval)
-  # Note: During high load, scheduled jobs may be delayed by 3-10 minutes
   schedule:
-    - cron: '*/5 * * * *'
-  # Allow manual triggering (use this for immediate updates!)
+    # Run every 5 minutes (offset from :00 to avoid GitHub high-load times)
+    # Runs at :02, :07, :12, :17, :22, :27, :32, :37, :42, :47, :52, :57
+    # IMPORTANT: Scheduled runs may be delayed 3-10 minutes during peak hours
+    # First scheduled run may take 5-60 minutes after workflow is first created
+    - cron: '2,7,12,17,22,27,32,37,42,47,52,57 * * * *'
+
+  # Manual triggering for immediate updates (recommended for election night)
   workflow_dispatch:
-  # Run on push to main (for testing and deployment)
+
+  # Also run on push to workflow file (for testing)
   push:
     branches:
       - main
     paths:
-      - 'scripts/fetch-airtable.js'
       - '.github/workflows/update-cache.yml'
 
 jobs:
