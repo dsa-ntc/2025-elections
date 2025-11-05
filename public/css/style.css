@@ -348,8 +348,25 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
+/* Card for run-off races */
+.candidate-card.runoff::after {
+  content: "RUN OFF";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #FF6B35;
+  color: var(--dsa-white);
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.8px;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
 /* Card for running/in progress races */
-.candidate-card:not(.winner):not(.loss)::after {
+.candidate-card:not(.winner):not(.loss):not(.runoff)::after {
   content: "IN PROGRESS";
   position: absolute;
   top: 0;

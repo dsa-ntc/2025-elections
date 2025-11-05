@@ -46,6 +46,7 @@ jobs:
         env:
           AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
           AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
+          R2_DATA_URL: ${{ secrets.R2_DATA_URL }}
         run: npm run build
 
       - name: Upload artifact

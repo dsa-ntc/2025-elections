@@ -45,6 +45,7 @@
         card-class (cond
                      (= status "Win") "candidate-card winner"
                      (= status "Loss") "candidate-card loss"
+                     (= status "Run Off") "candidate-card runoff"
                      :else "candidate-card")]
     [:div {:class card-class}
      ;; State badge (top right)
