@@ -25,6 +25,7 @@
      :vote-count (get fields (keyword "Vote Count"))
      :total-votes-cast (get fields (keyword "Total Votes Cast"))
      :ballots-counted (get fields (keyword "Ballots Counted"))
+     :poll-close-time (get fields (keyword "poll close time"))
      :results-link (get fields (keyword "Results Link"))
      :website-url (get fields (keyword "Website URL"))
      :chapter-url (get fields (keyword "Chapter URL"))
