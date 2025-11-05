@@ -42,7 +42,7 @@ To avoid hitting Airtable's rate limit (5 requests/second), this app uses a cach
 1. **How it works:**
    - The app first tries to load data from `/data.json` (cached data)
    - If the cache is unavailable, it falls back to the Airtable API
-   - A GitHub Action automatically updates `public/data.json` every minute
+   - A GitHub Action automatically updates `public/data.json` every 5 minutes
 
 2. **Manual cache update:**
    ```bash
