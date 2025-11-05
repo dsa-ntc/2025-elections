@@ -35,6 +35,23 @@ AIRTABLE_BASE_ID=your_base_id_here
 AIRTABLE_TABLE_NAME=Races
 ```
 
+### Airtable Caching System
+
+To avoid hitting Airtable's rate limit (5 requests/second), this app uses a caching proxy:
+
+1. **How it works:**
+   - The app first tries to load data from `/data.json` (cached data)
+   - If the cache is unavailable, it falls back to the Airtable API
+   - A GitHub Action automatically updates `public/data.json` every minute
+
+2. **Manual cache update:**
+   ```bash
+   npm run fetch-airtable
+   ```
+
+3. **GitHub Action setup:**
+   - The workflow runs automatically every minute (configurable in `.github/workflows/update-cache.yml`)
+
 ### Development
 
 Start the development server:
