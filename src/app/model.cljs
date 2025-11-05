@@ -43,17 +43,18 @@
     (group-by :state races)))
 
 (rf/reg-sub
-  ::stats
-  :<- [::races]
-  (fn [races _]
-    (let [total (count races)
-          wins (count (filter #(= (:status %) "Win") races))
-          losses (count (filter #(= (:status %) "Loss") races))
-          running (count (filter #(= (:status %) "Running") races))]
-      {:total total
-       :wins wins
-       :losses losses
-       :running running})))
+ ::stats
+ :<- [::races]
+ (fn [races _]
+   (let [total (count races)
+         wins (count (filter #(= (:status %) "Win") races))
+         losses (count (filter #(= (:status %) "Loss") races))
+         run-off (count (filter #(= (:status %) "Run Off") races))
+         running (count (filter #(= (:status %) "Running") races))]
+     {:total total
+      :wins wins
+      :losses losses
+      :running (+ run-off running)})))
 
 (rf/reg-sub
   ::state-expanded?

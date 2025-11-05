@@ -10,13 +10,14 @@
                        :timeZoneName "short"}]
       (.toLocaleString date "en-US" options))))
 
-(defn vote-display [{:keys [vote-percentage status ballots-counted poll-close-time]}]
+(defn vote-display [{:keys [vote-percentage results-override status ballots-counted poll-close-time]}]
   (if vote-percentage
     [:div.vote-results
      [:div.vote-percentage
-      (if vote-percentage
-        (str (.toFixed (js/Number vote-percentage) 1) "%")
-        "—")]
+      (if results-override (str results-override)
+          (if vote-percentage
+            (str (.toFixed (* 100 vote-percentage) 2) "%")
+            "—"))]
      (when (or ballots-counted poll-close-time)
        [:div.ballots-counted
         (str
