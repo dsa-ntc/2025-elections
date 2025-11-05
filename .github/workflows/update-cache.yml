@@ -11,12 +11,16 @@ on:
   # Manual triggering for immediate updates (recommended for election night)
   workflow_dispatch:
 
-  # Also run on push to workflow file (for testing)
+  # Also run on push to workflow file or fetch script (for testing)
+  # NOTE: Excludes public/data.json to prevent infinite loops when cache updates
   push:
     branches:
       - main
     paths:
       - '.github/workflows/update-cache.yml'
+      - 'scripts/fetch-airtable.js'
+    paths-ignore:
+      - 'public/data.json'
 
 jobs:
   update-cache:
@@ -56,26 +60,24 @@ jobs:
           echo "✅ data.json exists"
           ls -lh public/data.json
 
-      - name: Check for changes
-        id: git-check
-        run: |
-          if git diff --quiet public/data.json; then
-            echo "changed=false" >> $GITHUB_OUTPUT
-          else
-            echo "changed=true" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Commit and push if changed
-        if: steps.git-check.outputs.changed == 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data.json
-          git commit -m "Update Airtable cache [skip ci]"
-          git push
+      - name: Upload to Cloudflare R2
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_ENDPOINT_URL: ${{ secrets.R2_ENDPOINT_URL }}
+          R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME }}
+        run: |
+          # Install AWS CLI for S3-compatible operations
+          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+          unzip -q awscliv2.zip
+          sudo ./aws/install --update
 
-      - name: No changes detected
-        if: steps.git-check.outputs.changed != 'true'
-        run: echo "No changes to data.json - cache is up to date"
+          # Upload data.json to R2 bucket
+          aws s3 cp public/data.json s3://${R2_BUCKET_NAME}/data.json \
+            --endpoint-url ${AWS_ENDPOINT_URL} \
+            --region auto \
+            --content-type application/json \
+            --cache-control "max-age=60, must-revalidate"
+
+          echo "✅ Successfully uploaded data.json to Cloudflare R2"
+          echo "🌐 File is now available at: ${AWS_ENDPOINT_URL}/${R2_BUCKET_NAME}/data.json"
