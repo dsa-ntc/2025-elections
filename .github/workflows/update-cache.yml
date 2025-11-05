@@ -1,15 +1,19 @@
 name: Update Airtable Cache
 
 on:
-  # Run every minute during election night (adjust schedule as needed)
+  # Run every 5 minutes (GitHub Actions minimum recommended interval)
+  # Note: During high load, scheduled jobs may be delayed by 3-10 minutes
   schedule:
-    - cron: '* * * * *'
-  # Allow manual triggering
+    - cron: '*/5 * * * *'
+  # Allow manual triggering (use this for immediate updates!)
   workflow_dispatch:
-  # Run on push to main (for testing)
+  # Run on push to main (for testing and deployment)
   push:
     branches:
       - main
+    paths:
+      - 'scripts/fetch-airtable.js'
+      - '.github/workflows/update-cache.yml'
 
 jobs:
   update-cache:
@@ -38,11 +42,25 @@ jobs:
           AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
           AIRTABLE_TABLE_NAME: Races
         run: npm run fetch-airtable
+        continue-on-error: false
+
+      - name: Verify data.json was created/updated
+        run: |
+          if [ ! -f public/data.json ]; then
+            echo "Error: public/data.json was not created!"
+            exit 1
+          fi
+          echo "✅ data.json exists"
+          ls -lh public/data.json
 
       - name: Check for changes
         id: git-check
         run: |
-          git diff --exit-code public/data.json || echo "changed=true" >> $GITHUB_OUTPUT
+          if git diff --quiet public/data.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
 
       - name: Commit and push if changed
         if: steps.git-check.outputs.changed == 'true'

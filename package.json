@@ -7,7 +7,8 @@
     "build": "npm run clean && dotenv -e .env -- shadow-cljs release app",
     "clean": "rimraf public/js",
     "server": "dotenv -e .env -- shadow-cljs start",
-    "fetch-airtable": "node scripts/fetch-airtable.js"
+    "fetch-airtable": "node scripts/fetch-airtable.js",
+    "check-cache": "node scripts/check-cache-setup.js"
   },
   "dependencies": {
     "react": "^18.2.0",
