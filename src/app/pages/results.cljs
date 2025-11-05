@@ -33,7 +33,10 @@
                          :target "_blank"
                          :rel "noopener noreferrer"}
        "build DSA with us habibi"]
-      ]
+      [:a.donate-link {:href "https://electoral.dsausa.org/socialist-cash-takes-out-capitalist-trash/?source=habibi"
+                       :target "_blank"
+                       :rel "noopener noreferrer"}
+       "💸💸💸"]]
      [:div.summary-stats
       [summary-stat (:total stats) "Total Races"]
       [summary-stat (:wins stats) "Wins"]
