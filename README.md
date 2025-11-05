@@ -10,6 +10,8 @@ A single-page web application to track real-time election results for DSA nation
 - **Shadow-CLJS** - Build tool and dev server
 - **Bulma CSS** - UI framework
 - **Airtable** - Real-time data backend
+- **R2** - caching
+- **Github Actions** - Deployment, caching updates
 
 ## Setup
 
@@ -34,6 +36,8 @@ AIRTABLE_API_KEY=your_api_key_here
 AIRTABLE_BASE_ID=your_base_id_here
 AIRTABLE_TABLE_NAME=Races
 ```
+### Deployment
+Builds to Github Pages via Github Actions. Tokens scope-limited to custom domains/read access. DNS records and CNAME set in a typical GH pages flow.
 
 ### Data Caching with Cloudflare R2
 
