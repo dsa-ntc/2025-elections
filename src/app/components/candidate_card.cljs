@@ -40,6 +40,8 @@
         photo-url-raw (:candidate-photo-url race)
         photo-url (when photo-url-raw (clojure.string/trim photo-url-raw))
         webp-url (get-webp-url photo-url)
+        alt-text (or (:candidate-photo-alt race)
+                     (str (:candidate-name race) " photo"))
         card-class (cond
                      (= status "Win") "candidate-card winner"
                      (= status "Loss") "candidate-card loss"
@@ -55,7 +57,7 @@
          [:source {:srcset photo-url
                    :type "image/png"}]
          [:img {:src webp-url
-                :alt (str (:candidate-name race) " photo")}]]]
+                :alt alt-text}]]]
        [:div.candidate-photo.no-photo
         [:i.fa-solid.fa-user]])
 
