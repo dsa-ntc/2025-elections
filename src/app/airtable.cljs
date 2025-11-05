@@ -31,6 +31,7 @@
      :chapter-url (get fields (keyword "Chapter URL"))
      :endorsement-url (get fields (keyword "Endorsement Blog Post"))
      :candidate-photo-url (get fields (keyword "Candidate Photo URL"))
+     :candidate-photo-alt (get fields (keyword "Alt Text"))
      :display-order (or (get fields (keyword "Display Order")) 999)}))
 
 ;; Fetch races from Airtable API (with auth)
