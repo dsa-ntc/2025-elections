@@ -62,10 +62,17 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/data.json
           REASON="${{ github.event.inputs.reason }}"
-          git commit -m "Update Airtable cache: ${REASON:-Manual update} [skip ci]"
+          git commit -m "Update Airtable cache: ${REASON:-Manual update}"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deployment triggered
+        if: steps.git-check.outputs.changed == 'true'
+        run: |
+          echo "✅ Cache updated and pushed to main"
+          echo "🚀 GitHub Pages deployment will start automatically"
+          echo "📍 Check deployment status: https://github.com/${{ github.repository }}/actions/workflows/deploy.yml"
 
       - name: No changes detected
         if: steps.git-check.outputs.changed != 'true'

@@ -32,7 +32,7 @@
       [:a.join-dsa-link {:href "https://act.dsausa.org/donate/membership/"
                          :target "_blank"
                          :rel "noopener noreferrer"}
-       "build a better world with us habibi"]
+       "build DSA with us habibi"]
       [:a.donate-link {:href "https://electoral.dsausa.org/socialist-cash-takes-out-capitalist-trash/"
                        :target "_blank"
                        :rel "noopener noreferrer"}
