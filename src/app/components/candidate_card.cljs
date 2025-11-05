@@ -1,4 +1,5 @@
-(ns app.components.candidate-card)
+(ns app.components.candidate-card
+  (:require [clojure.string]))
 
 (defn format-poll-close-time [iso-datetime]
   "Formats ISO datetime string to a human-readable format with timezone"
@@ -27,9 +28,18 @@
     [:div.vote-results.no-results
      [:div.status-label status]]))
 
+(defn get-webp-url [png-url]
+  "Convert PNG URL to WebP URL"
+  (when png-url
+    (-> png-url
+        clojure.string/trim
+        (clojure.string/replace #"\.png$" ".webp"))))
+
 (defn candidate-card [race]
   (let [status (:status race)
-        photo-url (:candidate-photo-url race)
+        photo-url-raw (:candidate-photo-url race)
+        photo-url (when photo-url-raw (clojure.string/trim photo-url-raw))
+        webp-url (get-webp-url photo-url)
         card-class (cond
                      (= status "Win") "candidate-card winner"
                      (= status "Loss") "candidate-card loss"
@@ -41,8 +51,11 @@
      ;; Candidate photo
      (if photo-url
        [:div.candidate-photo
-        [:img {:src photo-url
-               :alt (str (:candidate-name race) " photo")}]]
+        [:picture
+         [:source {:srcset photo-url
+                   :type "image/png"}]
+         [:img {:src webp-url
+                :alt (str (:candidate-name race) " photo")}]]]
        [:div.candidate-photo.no-photo
         [:i.fa-solid.fa-user]])
 
