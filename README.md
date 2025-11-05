@@ -35,22 +35,44 @@ AIRTABLE_BASE_ID=your_base_id_here
 AIRTABLE_TABLE_NAME=Races
 ```
 
-### Airtable Caching System
+### Data Caching with Cloudflare R2
 
-To avoid hitting Airtable's rate limit (5 requests/second), this app uses a caching proxy:
+Airtable limits us to 5 requests/second per base so we can't use it publicly on election night. To resolve this, we poll the Airtable and cache the results in `data.json` and store it on R2. Users load R2's data.json first and only fallback to Airtable's API if it fails. This is a quick cache hack because I didn't want to ssh into a server and setup an actual caching proxy or DB.
 
-1. **How it works:**
-   - The app first tries to load data from `/data.json` (cached data)
-   - If the cache is unavailable, it falls back to the Airtable API
-   - A GitHub Action automatically updates `public/data.json` every 5 minutes
+#### How It Works
 
-2. **Manual cache update:**
+1. **Data Flow:**
+   - GitHub Actions fetches latest data from Airtable every 5 minutes (free tier means scheduled runs could take 15-30 minutes)
+   - Data is uploaded to Cloudflare R2 bucket as `data.json`
+   - The app fetches from R2 (or local `/data.json` in development)
+   - App auto-refreshes data every 30 seconds
+
+2. **Local Development:**
    ```bash
+   # Fetch latest data from Airtable to local cache
    npm run fetch-airtable
+   # Start dev server (uses local /data.json)
+   npm start
    ```
 
-3. **GitHub Action setup:**
-   - The workflow runs automatically every minute (configurable in `.github/workflows/update-cache.yml`)
+3. **Production Setup:**
+
+   The app is configured to fetch from R2 in production via the `R2_DATA_URL` environment variable:
+
+   - **R2 Bucket:** `2025-election`
+   - **Public URL:** `https://pub-83c6936810744c479bd0abe7c3146c24.r2.dev/data.json` (developer link, rate-limited and should use a custom domain to remove rate-limit)
+   - **Update Frequency:** Every 5 minutes via GitHub Actions  (free tier means scheduled runs could take 15-30 minutes)
+
+4. **GitHub Secrets Required:**
+
+   Add these secrets to your repository (Settings → Secrets and variables → Actions):
+
+   - `R2_ACCESS_KEY_ID` - R2 API access key
+   - `R2_SECRET_ACCESS_KEY` - R2 API secret key
+   - `R2_ENDPOINT_URL` - R2 endpoint URL
+   - `R2_BUCKET_NAME` - R2 bucket name
+   - `AIRTABLE_API_KEY` - Airtable API key
+   - `AIRTABLE_BASE_ID` - Airtable base ID
 
 ### Development
 
