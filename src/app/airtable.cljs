@@ -34,6 +34,19 @@
      :candidate-photo-alt (get fields (keyword "Alt Text"))
      :display-order (or (get fields (keyword "Display Order")) 999)}))
 
+;; Fetch races from cached data.json
+(defn fetch-races-from-cache [on-success on-failure]
+  (ajax/GET "/data.json"
+    {:response-format (ajax/json-response-format {:keywords? true})
+     :handler (fn [response]
+                (let [records (:records response)
+                      races (map transform-record records)]
+                  (js/console.log "Using cached data from data.json")
+                  (on-success races)))
+     :error-handler (fn [error]
+                      (js/console.log "Cache miss, falling back to Airtable API")
+                      (on-failure error))}))
+
 ;; Fetch races from Airtable API (with auth)
 (defn fetch-races-from-api [on-success on-failure]
   (let [{:keys [api-key base-id table-name]} airtable-config]
@@ -50,9 +63,13 @@
       ;; No API credentials, return nil to trigger fallback
       (on-failure {:status 0 :status-text "No API credentials configured"}))))
 
-;; Main fetch function - use API for now since CSV doesn't work
+;; Main fetch function - try cache first, fallback to API
 (defn fetch-races [on-success on-failure]
-  (fetch-races-from-api on-success on-failure))
+  (fetch-races-from-cache
+    on-success
+    (fn [_cache-error]
+      ;; Cache failed, try API
+      (fetch-races-from-api on-success on-failure))))
 
 ;; Register effect handler for Airtable API calls
 (rf/reg-fx
