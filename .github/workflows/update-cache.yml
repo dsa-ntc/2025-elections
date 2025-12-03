@@ -1,11 +1,11 @@
 name: Update Airtable Cache
 
 on:
-  #schedule:
+  schedule:
     # Run every 5 minutes
     # Note: GitHub scheduled workflows can be delayed 3-10+ minutes during peak hours
     # Using standard */5 syntax for maximum compatibility
-    #- cron: '*/5 * * * *'
+    - cron: '*/5 * * * *'
 
   # Manual triggering for immediate updates (recommended for election night)
   workflow_dispatch:
