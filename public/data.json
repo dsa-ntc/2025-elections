@@ -1,5 +1,5 @@
 {
-  "cached_at": "2025-11-05T01:46:12.893Z",
+  "cached_at": "2025-12-03T01:26:37.542Z",
   "records": [
     {
       "id": "rec31zclrGxqriRp2",
@@ -10,17 +10,17 @@
         "Endorsing Chapter": "Triangle",
         "Office": "Carrboro Town Council",
         "Office Type": "Municipal",
-        "Status": "Running",
-        "Vote Percentage": "32.75",
+        "Status": "Win",
         "Results Link": "https://er.ncsbe.gov/?election_dt=11/04/2025&county_id=68&office=LOC&contest=9",
         "Endorsement Blog Post": "https://electoral.dsausa.org/danny-nowell/",
-        "Display Order": 19,
+        "Display Order": 12,
         "Candidate Photo URL": "./img/candidates/nowell 1.png\n",
         "Chapter URL": "https://www.dsanc.org/",
-        "Ballots Counted": 0.0578,
+        "Ballots Counted": 1,
         "poll close time": "2025-11-05T00:30:00.000Z",
         "single select poll close (for kanban)": "1630 pst",
-        "Alt Text": "DSA-endorsed Danny Nowell is pictured donning a mustache and grinning, with a stylish knitted polo on."
+        "Alt Text": "DSA-endorsed Danny Nowell is pictured donning a mustache and grinning, with a stylish knitted polo on.",
+        "Vote Percentage": 0.3291
       }
     },
     {
@@ -33,15 +33,15 @@
         "Office": "Milwaukee Common Council, District 3",
         "Office Type": "Municipal",
         "Status": "Win",
-        "Vote Percentage": "53.52",
         "Results Link": "https://county.milwaukee.gov/EN/County-Clerk/Off-Nav/Election-Results/4-1-25-Spring-Election",
         "Endorsement Blog Post": "https://electoral.dsausa.org/endorsement-alex-brower/",
-        "Display Order": 23,
+        "Display Order": 11,
         "Candidate Photo URL": "./img/candidates/brower 1.png\n",
         "Chapter URL": "https://milwaukee.dsawi.org/",
         "Ballots Counted": 1,
         "poll close time": "2025-04-02T01:00:00.000Z",
-        "single select poll close (for kanban)": "previous race"
+        "single select poll close (for kanban)": "previous race",
+        "Vote Percentage": 0.5352
       }
     },
     {
@@ -53,17 +53,17 @@
         "Endorsing Chapter": "Metro DC",
         "Office": "Greenbelt City Council",
         "Office Type": "Municipal",
-        "Status": "Running",
-        "Vote Percentage": "0",
+        "Status": "Win",
         "Results Link": "https://www.greenbeltmd.gov/175/Election-Information",
         "Endorsement Blog Post": "https://electoral.dsausa.org/frankie-fritz/",
         "Display Order": 13,
         "Candidate Photo URL": "./img/candidates/fritz 1.png\n",
         "Chapter URL": "https://mdcdsa.org/",
-        "Ballots Counted": 0,
+        "Ballots Counted": 1,
         "poll close time": "2025-11-05T01:00:00.000Z",
         "single select poll close (for kanban)": "1700 pst",
-        "Alt Text": "DSA-endorsed Frankie Fritz is pictured wearing a bold patterned button up and a light gray blazer."
+        "Alt Text": "DSA-endorsed Frankie Fritz is pictured wearing a bold patterned button up and a light gray blazer.",
+        "Vote Percentage": 0.613
       }
     },
     {
@@ -75,17 +75,17 @@
         "Endorsing Chapter": "Fort Collins",
         "Office": "Fort Collins City Council District 5",
         "Office Type": "Municipal",
-        "Status": "Running",
-        "Vote Percentage": "0",
+        "Status": "Loss",
         "Results Link": "https://www.larimer.gov/clerk/elections",
         "Endorsement Blog Post": "https://electoral.dsausa.org/zoelle-lane/",
-        "Display Order": 10,
+        "Display Order": 19,
         "Candidate Photo URL": "./img/candidates/lane 1.png\n",
         "Chapter URL": "https://dsafc.org/",
-        "Ballots Counted": 0,
+        "Ballots Counted": 1,
         "poll close time": "2025-11-05T02:00:00.000Z",
         "single select poll close (for kanban)": "1800 pst",
-        "Alt Text": "DSA-endorsed Zoelle Lane is pictured wearing a striped dress which shows a colorful tattoo on her arm."
+        "Alt Text": "DSA-endorsed Zoelle Lane is pictured wearing a striped dress which shows a colorful tattoo on her arm.",
+        "Vote Percentage": 0.3588
       }
     },
     {
@@ -97,17 +97,17 @@
         "Endorsing Chapter": "Twin Cities",
         "Office": "Minneapolis Park and Recreation Board, At-Large",
         "Office Type": "Municipal",
-        "Status": "Running",
-        "Vote Percentage": "0",
+        "Status": "Loss",
         "Results Link": "https://vote.minneapolismn.gov/results-data/election-results/",
         "Endorsement Blog Post": "https://electoral.dsausa.org/twin-cities-slate/",
-        "Display Order": 4,
+        "Display Order": 17,
         "Candidate Photo URL": "./img/candidates/schneider 1.png\n",
         "Chapter URL": "https://twincitiesdsa.org/",
-        "Ballots Counted": 0,
+        "Ballots Counted": 1,
         "poll close time": "2025-11-05T02:00:00.000Z",
         "single select poll close (for kanban)": "1800 pst",
-        "Alt Text": "DSA-endorsed Adam Schneider is pictured outside in the lovely cold Minnesota winter, wearing multiple layers and smiling."
+        "Alt Text": "DSA-endorsed Adam Schneider is pictured outside in the lovely cold Minnesota winter, wearing multiple layers and smiling.",
+        "Vote Percentage": 0.0624
       }
     },
     {
@@ -119,17 +119,17 @@
         "Endorsing Chapter": "Tacoma & Pierce County",
         "Office": "Tacoma City Council, District 5",
         "Office Type": "Municipal",
-        "Status": "Running",
-        "Vote Percentage": "0",
+        "Status": "Loss",
         "Results Link": "https://www.piercecountywa.gov/328/Elections",
         "Endorsement Blog Post": "https://electoral.dsausa.org/zev-cook/",
         "Display Order": 20,
         "Candidate Photo URL": "./img/candidates/cook 1.png\n",
         "Chapter URL": "https://tacomadsa.org/",
-        "Ballots Counted": 0.01,
+        "Ballots Counted": 0.93,
         "poll close time": "2025-11-05T04:00:00.000Z",
         "single select poll close (for kanban)": "2000 pst",
-        "Alt Text": "DSA-endorsed Zev Cook is pictured wearing a sharp suit and watermelon earrings."
+        "Alt Text": "DSA-endorsed Zev Cook is pictured wearing a sharp suit and watermelon earrings.",
+        "Vote Percentage": 0.3081
       }
     },
     {
@@ -141,17 +141,18 @@
         "Endorsing Chapter": "Boston",
         "Office": "Cambridge City Council - At Large",
         "Office Type": "Municipal",
-        "Status": "Running",
-        "Vote Percentage": "0",
+        "Status": "Win",
         "Results Link": "https://www.cambridgema.gov/Departments/electioncommission",
         "Endorsement Blog Post": "https://electoral.dsausa.org/ayah-al-zubi/",
-        "Display Order": 9,
+        "Display Order": 8,
         "Candidate Photo URL": "./img/candidates/al-zubi 1.png\n",
         "Chapter URL": "https://bostondsa.org/",
-        "Ballots Counted": 0,
+        "Ballots Counted": 1,
         "poll close time": "2025-11-05T01:00:00.000Z",
         "single select poll close (for kanban)": "1700 pst",
-        "Alt Text": "DSA-endorsed Ayah Al-Zubi is pictured wearing a slightly edgy black dress shirt and gold necklace and grinning confidently."
+        "Alt Text": "DSA-endorsed Ayah Al-Zubi is pictured wearing a slightly edgy black dress shirt and gold necklace and grinning confidently.",
+        "Results Override": "RCV Win",
+        "Vote Percentage": 0
       }
     },
     {
@@ -163,16 +164,17 @@
         "Endorsing Chapter": "Boston",
         "Office": "Mayor of Somerville",
         "Office Type": "Municipal",
-        "Status": "Running",
-        "Vote Percentage": "0",
+        "Status": "Loss",
+        "Results Link": "https://www.somervillema.gov/votesomerville",
         "Endorsement Blog Post": "https://electoral.dsausa.org/willie-burnley-jr/",
-        "Display Order": 1,
+        "Display Order": 16,
         "Candidate Photo URL": "./img/candidates/burnley 1.png",
         "Chapter URL": "https://bostondsa.org/",
-        "Ballots Counted": 0,
+        "Ballots Counted": 1,
         "poll close time": "2025-11-05T01:00:00.000Z",
         "single select poll close (for kanban)": "1700 pst",
-        "Alt Text": "DSA-endorsed Willie Burnley Jr. is pictured wearing a striped sweater and smiling warmly."
+        "Alt Text": "DSA-endorsed Willie Burnley Jr. is pictured wearing a striped sweater and smiling warmly.",
+        "Vote Percentage": 0.4459
       }
     },
     {
@@ -184,17 +186,17 @@
         "Endorsing Chapter": "Seattle",
         "Office": "Renton City Council, At-Large",
         "Office Type": "Municipal",
-        "Status": "Running",
-        "Vote Percentage": "0",
+        "Status": "Loss",
         "Results Link": "https://kingcounty.gov",
         "Endorsement Blog Post": "https://electoral.dsausa.org/michael-westgaard/",
-        "Display Order": 18,
+        "Display Order": 21,
         "Candidate Photo URL": "./img/candidates/westgaard 1.png\n",
         "Chapter URL": "https://seattledsa.org/",
-        "Ballots Counted": 0,
+        "Ballots Counted": 0.82,
         "poll close time": "2025-11-05T04:00:00.000Z",
         "single select poll close (for kanban)": "2000 pst",
-        "Alt Text": "DSA-endorsed Michael Westgaard is pictured wearing a floral patterned button-up and smiling in the sunshine."
+        "Alt Text": "DSA-endorsed Michael Westgaard is pictured wearing a floral patterned button-up and smiling in the sunshine.",
+        "Vote Percentage": 0.398
       }
     },
     {
@@ -206,17 +208,17 @@
         "Endorsing Chapter": "Twin Cities",
         "Office": "Minneapolis City Council, Ward 8",
         "Office Type": "Municipal",
-        "Status": "Running",
-        "Vote Percentage": "0",
+        "Status": "Win",
         "Results Link": "https://vote.minneapolismn.gov/results-data/election-results/",
         "Endorsement Blog Post": "https://electoral.dsausa.org/twin-cities-slate/",
-        "Display Order": 7,
+        "Display Order": 5,
         "Candidate Photo URL": "./img/candidates/stevenson 1.png\n",
         "Chapter URL": "https://twincitiesdsa.org/",
-        "Ballots Counted": 0,
+        "Ballots Counted": 1,
         "poll close time": "2025-11-05T02:00:00.000Z",
         "single select poll close (for kanban)": "1800 pst",
-        "Alt Text": "DSA-endorsed Soren Stevenson is pictured grinning and wearing a button-up shirt and stylish tortoiseshell glasses."
+        "Alt Text": "DSA-endorsed Soren Stevenson is pictured grinning and wearing a button-up shirt and stylish tortoiseshell glasses.",
+        "Vote Percentage": 0.5625
       }
     },
     {
@@ -228,17 +230,17 @@
         "Endorsing Chapter": "Atlanta",
         "Office": "Atlanta City Council, District 2",
         "Office Type": "Municipal",
-        "Status": "Running",
-        "Vote Percentage": "63.61",
+        "Status": "Win",
         "Results Link": "https://sos.ga.gov/page/georgia-election-results",
         "Endorsement Blog Post": "https://electoral.dsausa.org/kelsea-bond/",
-        "Display Order": 8,
+        "Display Order": 7,
         "Candidate Photo URL": "./img/candidates/bond 1.png\n",
         "Chapter URL": "https://atldsa.org/",
-        "Ballots Counted": 0,
+        "Ballots Counted": 1,
         "poll close time": "2025-11-05T01:00:00.000Z",
         "single select poll close (for kanban)": "1700 pst",
-        "Alt Text": "DSA-endorsed Kelsea Bond pictured outside wearing a jacket in a relaxed position with hands in pockets."
+        "Alt Text": "DSA-endorsed Kelsea Bond pictured outside wearing a jacket in a relaxed position with hands in pockets.",
+        "Vote Percentage": 0.64
       }
     },
     {
@@ -251,16 +253,16 @@
         "Office": "Jersey City Council, Ward D",
         "Office Type": "Municipal",
         "Status": "Running",
-        "Vote Percentage": "25.12",
         "Results Link": "https://www.nj.gov/state/elections/election-night-results.shtml",
         "Endorsement Blog Post": "https://electoral.dsausa.org/jake-ephros/",
-        "Display Order": 16,
+        "Display Order": 1,
         "Candidate Photo URL": "./img/candidates/ephros 1.png\n",
         "Chapter URL": "https://north.dsanj.org/",
         "Ballots Counted": 0,
-        "poll close time": "2025-11-05T01:00:00.000Z",
+        "poll close time": "2025-12-03T01:00:00.000Z",
         "single select poll close (for kanban)": "1700 pst",
-        "Alt Text": "DSA-endorsed Jake Ephros is pictured wearing a plaid shirt and speaking into a megaphone."
+        "Alt Text": "DSA-endorsed Jake Ephros is pictured wearing a plaid shirt and speaking into a megaphone.",
+        "Vote Percentage": 0
       }
     },
     {
@@ -272,17 +274,17 @@
         "Endorsing Chapter": "Twin Cities",
         "Office": "Minneapolis Park and Recreation Board, At-Large",
         "Office Type": "Municipal",
-        "Status": "Running",
-        "Vote Percentage": "0",
+        "Status": "Loss",
         "Results Link": "https://vote.minneapolismn.gov/results-data/election-results/",
         "Endorsement Blog Post": "https://electoral.dsausa.org/twin-cities-slate/",
-        "Display Order": 5,
+        "Display Order": 18,
         "Candidate Photo URL": "./img/candidates/wilson 1.png\n",
         "Chapter URL": "https://twincitiesdsa.org/",
-        "Ballots Counted": 0,
+        "Ballots Counted": 1,
         "poll close time": "2025-11-05T02:00:00.000Z",
         "single select poll close (for kanban)": "1800 pst",
-        "Alt Text": "DSA-endorsed Michael Wilson is pictured outside in the sunshine, wearing a flannel and baseball cap."
+        "Alt Text": "DSA-endorsed Michael Wilson is pictured outside in the sunshine, wearing a flannel and baseball cap.",
+        "Vote Percentage": 0.1349
       }
     },
     {
@@ -294,17 +296,17 @@
         "Endorsing Chapter": "Twin Cities",
         "Office": "Minneapolis City Council, Ward 2",
         "Office Type": "Municipal",
-        "Status": "Running",
-        "Vote Percentage": "0",
+        "Status": "Win",
         "Results Link": "https://vote.minneapolismn.gov/results-data/election-results/",
         "Endorsement Blog Post": "https://electoral.dsausa.org/twin-cities-slate/",
         "Display Order": 6,
         "Candidate Photo URL": "./img/candidates/wonsley 1.png\n",
         "Chapter URL": "https://twincitiesdsa.org/",
-        "Ballots Counted": 0,
+        "Ballots Counted": 1,
         "poll close time": "2025-11-05T02:00:00.000Z",
         "single select poll close (for kanban)": "1800 pst",
-        "Alt Text": "DSA-endorsed Robin Wonsley is pictured with her hair up and wearing a patterned cardigan."
+        "Alt Text": "DSA-endorsed Robin Wonsley is pictured with her hair up and wearing a patterned cardigan.",
+        "Vote Percentage": 0.598
       }
     },
     {
@@ -316,17 +318,17 @@
         "Endorsing Chapter": "Ithaca",
         "Office": "Ithaca Common Council Ward 5",
         "Office Type": "Municipal",
-        "Status": "Running",
-        "Vote Percentage": "0",
+        "Status": "Win",
         "Results Link": "https://www.tompkinscountyny.gov/All-Departments/Board-of-Elections",
         "Endorsement Blog Post": "https://electoral.dsausa.org/hannah-shvets/",
-        "Display Order": 11,
+        "Display Order": 9,
         "Candidate Photo URL": "./img/candidates/shvets 1.png\n",
         "Chapter URL": "https://ithacadsa.org/",
-        "Ballots Counted": 0,
+        "Ballots Counted": 1,
         "poll close time": "2025-11-05T02:00:00.000Z",
         "single select poll close (for kanban)": "1800 pst",
-        "Alt Text": "DSA-endorsed Hannah Shvets is pictured wearing a black leather jacket and a long red scarf, smiling confidently."
+        "Alt Text": "DSA-endorsed Hannah Shvets is pictured wearing a black leather jacket and a long red scarf, smiling confidently.",
+        "Vote Percentage": 0.6412
       }
     },
     {
@@ -338,17 +340,17 @@
         "Endorsing Chapter": "Ithaca",
         "Office": "Ithaca Common Council Ward 1",
         "Office Type": "Municipal",
-        "Status": "Running",
-        "Vote Percentage": "0",
+        "Status": "Win",
         "Results Link": "https://www.tompkinscountyny.gov/All-Departments/Board-of-Elections",
         "Endorsement Blog Post": "https://electoral.dsausa.org/jorge-defendini/",
-        "Display Order": 12,
+        "Display Order": 10,
         "Candidate Photo URL": "./img/candidates/defendini 1.png\n",
         "Chapter URL": "https://ithacadsa.org/",
-        "Ballots Counted": 0,
+        "Ballots Counted": 1,
         "poll close time": "2025-11-05T02:00:00.000Z",
         "single select poll close (for kanban)": "1800 pst",
-        "Alt Text": "DSA-endorsed Jorge DeFendini is pictured sitting with his hands crossed and grinning. He is wearing a DSA pin on his jacket."
+        "Alt Text": "DSA-endorsed Jorge DeFendini is pictured sitting with his hands crossed and grinning. He is wearing a DSA pin on his jacket.",
+        "Vote Percentage": 0.887
       }
     },
     {
@@ -360,16 +362,16 @@
         "Endorsing Chapter": "NYC-DSA",
         "Office": "Mayor of New York City",
         "Office Type": "Municipal",
-        "Status": "Running",
-        "Vote Percentage": "0",
+        "Status": "Win",
         "Results Link": "https://vote.nyc ",
-        "Display Order": 2,
+        "Display Order": 3,
         "Candidate Photo URL": "./img/candidates/mamdani.png\n",
         "Chapter URL": "https://socialists.nyc/",
-        "Ballots Counted": 0,
+        "Ballots Counted": 0.98,
         "poll close time": "2025-11-05T02:00:00.000Z",
         "single select poll close (for kanban)": "1800 pst",
-        "Alt Text": "Locally-endorsed candidate Zohran Mamdani of NYC-DSA is pictured wearing a suit and polka dot tie and grinning widely."
+        "Alt Text": "Locally-endorsed candidate Zohran Mamdani of NYC-DSA is pictured wearing a suit and polka dot tie and grinning widely.",
+        "Vote Percentage": 0.5039
       }
     },
     {
@@ -382,16 +384,16 @@
         "Office": "Jersey City Council, Ward B",
         "Office Type": "Municipal",
         "Status": "Running",
-        "Vote Percentage": "26.77",
         "Results Link": "https://www.nj.gov/state/elections/election-night-results.shtml",
         "Endorsement Blog Post": "https://electoral.dsausa.org/joel-brooks/",
-        "Display Order": 17,
+        "Display Order": 2,
         "Candidate Photo URL": "./img/candidates/brooks 1.png\n",
         "Chapter URL": "https://north.dsanj.org/",
         "Ballots Counted": 0,
-        "poll close time": "2025-11-05T01:00:00.000Z",
+        "poll close time": "2025-12-03T01:00:00.000Z",
         "single select poll close (for kanban)": "1700 pst",
-        "Alt Text": "DSA-endorsed Joel Brooks is pictured grinning and wearing a blue button down and stylish glasses."
+        "Alt Text": "DSA-endorsed Joel Brooks is pictured grinning and wearing a blue button down and stylish glasses.",
+        "Vote Percentage": 0
       }
     },
     {
@@ -404,15 +406,15 @@
         "Office": "Colorado Springs City Council, District 3",
         "Office Type": "Municipal",
         "Status": "Loss",
-        "Vote Percentage": "34.45",
         "Results Link": "https://coloradosprings.gov/ElectionResults",
         "Endorsement Blog Post": "https://electoral.dsausa.org/endorsement-maryah-lauer-colorado-springs-city-council/",
-        "Display Order": 22,
+        "Display Order": 23,
         "Candidate Photo URL": "./img/candidates/lauer 1.png\n",
         "Chapter URL": "https://www.cosdsa.org/",
         "Ballots Counted": 1,
         "poll close time": "2025-04-02T01:00:00.000Z",
-        "single select poll close (for kanban)": "previous race"
+        "single select poll close (for kanban)": "previous race",
+        "Vote Percentage": 0.3445
       }
     },
     {
@@ -424,17 +426,17 @@
         "Endorsing Chapter": "Metro Detroit",
         "Office": "Detroit City Council, District 7",
         "Office Type": "Municipal",
-        "Status": "Running",
-        "Vote Percentage": "66.58",
+        "Status": "Win",
         "Results Link": "https://detroitmi.gov/departments/elections",
         "Endorsement Blog Post": "https://electoral.dsausa.org/denzel-mccampbell/",
-        "Display Order": 14,
+        "Display Order": 4,
         "Candidate Photo URL": "./img/candidates/mccampbell 1.png\n",
         "Chapter URL": "https://www.metrodetroitdsa.com/",
-        "Ballots Counted": 0.01,
+        "Ballots Counted": 1,
         "poll close time": "2025-11-05T01:00:00.000Z",
         "single select poll close (for kanban)": "1700 pst",
-        "Alt Text": "DSA-endorsed Denzel McCampbell is pictured wearing a sharp dark blue suit and tie and grinning."
+        "Alt Text": "DSA-endorsed Denzel McCampbell is pictured wearing a sharp dark blue suit and tie and grinning.",
+        "Vote Percentage": 0.586
       }
     },
     {
@@ -447,15 +449,15 @@
         "Office": "Onondaga County Legislature, District 8",
         "Office Type": "Municipal",
         "Status": "Loss",
-        "Vote Percentage": "40.50",
         "Results Link": "https://hubdocs.blob.core.windows.net/docs/ongov/rec/57255/attachments/2025%20June%20Primary.pdf",
         "Endorsement Blog Post": "https://electoral.dsausa.org/tammy-honeywell/",
-        "Display Order": 21,
+        "Display Order": 22,
         "Candidate Photo URL": "./img/candidates/honeywell 1.png\n",
         "Chapter URL": "https://syracusedsa.org/",
         "Ballots Counted": 1,
         "poll close time": "2025-06-25T01:00:00.000Z",
-        "single select poll close (for kanban)": "previous race"
+        "single select poll close (for kanban)": "previous race",
+        "Vote Percentage": 0.405
       }
     },
     {
@@ -467,15 +469,15 @@
         "Endorsing Chapter": "Mid-Hudson Valley",
         "Office": "Poughkeepsie Common Council, Ward 8",
         "Office Type": "Municipal",
-        "Status": "Running",
-        "Vote Percentage": "0",
-        "Display Order": 15,
+        "Status": "Win",
+        "Display Order": 14,
         "Candidate Photo URL": "./img/candidates/atonna 1.png\n",
         "Chapter URL": "https://mhvdsa.org/",
-        "Ballots Counted": 0,
+        "Ballots Counted": 1,
         "poll close time": "2025-11-05T02:00:00.000Z",
         "single select poll close (for kanban)": "1800 pst",
-        "Alt Text": "DSA-endorsed Daniel Atonna smiles confidently, wearing a windbreaker with rose pin."
+        "Alt Text": "DSA-endorsed Daniel Atonna smiles confidently, wearing a windbreaker with rose pin.",
+        "Vote Percentage": 0.6635
       }
     },
     {
@@ -487,16 +489,16 @@
         "Endorsing Chapter": "Twin Cities",
         "Office": "Mayor of Minneapolis",
         "Office Type": "Municipal",
-        "Status": "Running",
-        "Vote Percentage": "0",
+        "Status": "Loss",
         "Results Link": "https://vote.minneapolismn.gov/results-data/election-results/ ",
-        "Display Order": 3,
+        "Display Order": 15,
         "Candidate Photo URL": "./img/candidates/fateh.png\n",
         "Chapter URL": "https://twincitiesdsa.org/",
-        "Ballots Counted": 0,
+        "Ballots Counted": 1,
         "poll close time": "2025-11-05T02:00:00.000Z",
         "single select poll close (for kanban)": "1800 pst",
-        "Alt Text": "Locally-endorsed candidate Omar Fateh of Twin Cities DSA is pictured gazing off-camera and smiling."
+        "Alt Text": "Locally-endorsed candidate Omar Fateh of Twin Cities DSA is pictured gazing off-camera and smiling.",
+        "Vote Percentage": 0.3163
       }
     }
   ]
