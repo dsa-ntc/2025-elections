@@ -1,4 +1,5 @@
 name: Update Cache (Frequent - Manual Only)
+# Managed by dsa-ntc
 
 # This workflow is designed for manual triggering during active election monitoring
 # Use the "Run workflow" button in GitHub Actions for immediate updates
