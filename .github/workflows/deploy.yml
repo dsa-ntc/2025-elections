@@ -51,6 +51,17 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-cljdeps-
 
+      # Workaround: Aether on GitHub runners fails to resolve
+      # com.fasterxml:oss-parent:38 (a transitive parent POM via jackson-core
+      # 2.10.2) even though Maven Central serves it. Copy a vendored copy
+      # into ~/.m2/repository so the resolver finds it on disk.
+      - name: Pre-seed vendored Maven artifacts
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.m2/repository
+          cp -Rv vendor/m2/. ~/.m2/repository/
+          ls -l ~/.m2/repository/com/fasterxml/oss-parent/38/
+
       - name: Install dependencies
         run: npm ci
 
