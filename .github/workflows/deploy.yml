@@ -40,6 +40,17 @@ jobs:
         with:
           cli: latest
 
+      - name: Cache Maven & Clojure deps
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.m2/repository
+            ~/.gitlibs
+            ~/.deps.clj
+          key: ${{ runner.os }}-cljdeps-${{ hashFiles('deps.edn', 'shadow-cljs.edn') }}
+          restore-keys: |
+            ${{ runner.os }}-cljdeps-
+
       - name: Install dependencies
         run: npm ci
 
@@ -48,7 +59,24 @@ jobs:
           AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
           AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
           R2_DATA_URL: ${{ secrets.R2_DATA_URL }}
-        run: npm run build
+        run: |
+          for attempt in 1 2 3; do
+            echo "::group::Build attempt $attempt"
+            if npm run build; then
+              echo "::endgroup::"
+              echo "Build succeeded on attempt $attempt"
+              exit 0
+            fi
+            echo "::endgroup::"
+            echo "Build attempt $attempt failed"
+            if [ $attempt -lt 3 ]; then
+              sleep_seconds=$((attempt * 15))
+              echo "Sleeping ${sleep_seconds}s before retry..."
+              sleep $sleep_seconds
+            fi
+          done
+          echo "Build failed after 3 attempts"
+          exit 1
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
