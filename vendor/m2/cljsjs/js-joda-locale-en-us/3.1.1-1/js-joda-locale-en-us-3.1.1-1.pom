@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cljsjs</groupId>
+  <artifactId>js-joda-locale-en-us</artifactId>
+  <version>3.1.1-1</version>
+  <name>js-joda-locale-en-us</name>
+  <description>prebuilt en-US locale addon for js-joda</description>
+  <url>https://js-joda.github.io/js-joda/js-joda-locale</url>
+  <licenses>
+    <license>
+      <url>http://opensource.org/licenses/MIT</url>
+      <name>MIT</name>
+      <comments/>
+    </license>
+  </licenses>
+  <packaging>jar</packaging>
+  <scm>
+    <url>https://github.com/cljsjs/packages</url>
+    <tag>926d0bf4cebe07abda71c8d8f913cf8ca09c7e38</tag>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>cljsjs</groupId>
+      <artifactId>boot-cljsjs</artifactId>
+      <version>0.10.5</version>
+      <scope>test</scope>
+      <exclusions/>
+    </dependency>
+  </dependencies>
+</project>

@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>data.priority-map</artifactId>
+  <version>1.1.0</version>
+  <name>data.priority-map</name>
+
+  <parent>
+    <groupId>org.clojure</groupId>
+    <artifactId>pom.contrib</artifactId>
+    <version>1.1.0</version>
+  </parent>
+
+  <developers>
+    <developer>
+      <name>Mark Engelberg</name>
+    </developer>
+  </developers>
+
+  <properties>
+    <clojure.version>1.5.1</clojure.version>
+  </properties>
+
+  <scm>
+    <connection>scm:git:git@github.com:clojure/data.priority-map.git</connection>
+    <developerConnection>scm:git:git@github.com:clojure/data.priority-map.git</developerConnection>
+    <url>git@github.com:clojure/data.priority-map.git</url>
+    <tag>v1.1.0</tag>
+  </scm>
+</project>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+            
+  
+  
+  
+  
+  <modelVersion>4.0.0</modelVersion>
+            
+  
+  
+  
+  
+  <groupId>cljc.java-time</groupId>
+            
+  
+  
+  
+  
+  <artifactId>cljc.java-time</artifactId>
+            
+  
+  
+  
+  
+  <version>0.1.16</version>
+            
+  
+  
+  
+  
+  <name>cljc.java-time</name>
+            
+  
+  
+  
+  
+  <dependencies>
+        
+    <dependency>
+            
+      <groupId>cljs.java-time</groupId>
+            
+      <artifactId>cljs.java-time</artifactId>
+            
+      <version>0.1.18</version>
+          
+    </dependency>
+      
+  </dependencies>
+            
+  
+  
+  
+  
+  <build>
+                        
+    
+    
+    
+    
+    <sourceDirectory>src</sourceDirectory>
+                      
+  
+  
+  
+  
+  </build>
+            
+  
+  
+  
+  
+  <repositories/>
+          
+  
+  
+  
+  
+  <scm>
+                    
+    
+    
+    
+    <url>https://github.com/henryw374/cljc.java-time</url>
+                    
+    
+    
+    
+    <tag>c65387fc34a520e38f1c1d36249b01ba125168f9</tag>
+                    
+    
+    
+    
+    <connection>scm:git:git@github.com:henryw374/cljc.java-time.git</connection>
+                    
+    
+    
+    
+    <developerConnection>scm:git:git@github.com:henryw374/cljc.java-time.git</developerConnection>
+                  
+  
+  
+  
+  </scm>
+        
+
+
+
+</project>

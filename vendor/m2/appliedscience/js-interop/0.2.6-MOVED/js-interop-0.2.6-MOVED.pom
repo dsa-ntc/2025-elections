@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+            
+  
+  
+  
+  
+  <modelVersion>4.0.0</modelVersion>
+            
+  
+  
+  
+  
+  <groupId>appliedscience</groupId>
+            
+  
+  
+  
+  
+  <artifactId>js-interop</artifactId>
+            
+  
+  
+  
+  
+  <version>0.2.6-MOVED</version>
+            
+  
+  
+  
+  
+  <name>js-interop</name>
+            
+  
+  
+  
+  
+  <dependencies/>
+            
+  
+  
+  
+  
+  <build>
+                        
+    
+    
+    
+    
+    <sourceDirectory>src/main</sourceDirectory>
+                      
+  
+  
+  
+  
+  </build>
+            
+  
+  
+  
+  
+  <repositories/>
+          
+  
+  
+  
+  
+  <scm>
+                    
+    
+    
+    
+    <url>https://github.com/applied-science/js-interop</url>
+                    
+    
+    
+    
+    <tag>d617e67ca64b93ba35f5c45b1a227e3cd33402e4</tag>
+                    
+    
+    
+    
+    <connection>scm:git:git@github.com:applied-science/js-interop.git</connection>
+                    
+    
+    
+    
+    <developerConnection>scm:git:git@github.com:applied-science/js-interop.git</developerConnection>
+                  
+  
+  
+  
+  </scm>
+        
+
+
+
+</project>

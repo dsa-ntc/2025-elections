@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>java.data</artifactId>
+    <version>1.1.103</version>
+    <name>java.data</name>
+
+    <url>https://github.com/clojure/java.data/</url>
+    <description>Utilities for working with Java beans from Clojure</description>
+
+    <parent>
+      <groupId>org.clojure</groupId>
+      <artifactId>pom.contrib</artifactId>
+      <version>1.1.0</version>
+    </parent>
+
+    <developers>
+      <developer>
+        <name>Cosmin Stejerean</name>
+      </developer>
+      <developer>
+        <name>Sean Corfield</name>
+      </developer>
+    </developers>
+
+    <scm>
+      <connection>scm:git:git@github.com:clojure/java.data.git</connection>
+      <developerConnection>scm:git:git@github.com:clojure/java.data.git</developerConnection>
+      <url>git@github.com:clojure/java.data.git</url>
+      <tag>v1.1.103</tag>
+  </scm>
+
+    <dependencies>
+      <dependency>
+        <groupId>org.clojure</groupId>
+        <artifactId>tools.logging</artifactId>
+        <version>1.2.1</version>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
+</project>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>clansi</groupId>
+  <artifactId>clansi</artifactId>
+  <version>1.0.0</version>
+  <name>clansi</name>
+  <description>ANSI style and color codes for Clojure.</description>
+  <scm>
+    <connection>scm:git:git://github.com/ams-clj/clansi.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/ams-clj/clansi.git</developerConnection>
+    <tag>a6a184c7cfc2e51e4647b4ee8aa7b25126b23258</tag>
+    <url>http://github.com/ams-clj/clansi</url>
+  </scm>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <testSourceDirectory>test</testSourceDirectory>
+  </build>
+  <repositories>
+    <repository>
+      <id>central</id>
+      <url>http://repo1.maven.org/maven2</url>
+    </repository>
+    <repository>
+      <id>clojure</id>
+      <url>http://build.clojure.org/releases</url>
+    </repository>
+    <repository>
+      <id>clojure-snapshots</id>
+      <url>http://build.clojure.org/snapshots</url>
+    </repository>
+    <repository>
+      <id>clojars</id>
+      <url>http://clojars.org/repo/</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>org.clojure</groupId>
+      <artifactId>clojure</artifactId>
+      <version>1.1.0</version>
+    </dependency>
+  </dependencies>
+</project>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+                            
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <modelVersion>4.0.0</modelVersion>
+                            
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <groupId>applied-science</groupId>
+                            
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <artifactId>js-interop</artifactId>
+                            
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <version>0.2.7</version>
+                            
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <name>js-interop</name>
+                            
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <dependencies>
+        
+    <dependency>
+            
+      <groupId>appliedscience</groupId>
+            
+      <artifactId>js-interop</artifactId>
+            
+      <version>0.2.6-MOVED</version>
+          
+    </dependency>
+      
+  </dependencies>
+                            
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <build>
+                                                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <sourceDirectory>src/main</sourceDirectory>
+                                                      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </build>
+                            
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <repositories/>
+                          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <scm>
+                                                    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <url>https://github.com/applied-science/js-interop</url>
+                                                    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <tag>2e8576b47616f168ee8c065a948e5990b93f7f5b</tag>
+                                                    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <connection>scm:git:git@github.com:applied-science/js-interop.git</connection>
+                                                    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <developerConnection>scm:git:git@github.com:applied-science/js-interop.git</developerConnection>
+                                                  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </scm>
+                        
+
+
+
+
+
+
+
+
+
+
+
+</project>

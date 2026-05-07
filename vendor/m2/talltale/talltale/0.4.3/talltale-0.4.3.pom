@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
+  <modelVersion>4.0.0</modelVersion>
+    
+  <groupId>talltale</groupId>
+    
+  <artifactId>talltale</artifactId>
+    
+  <packaging>jar</packaging>
+    
+  <version>0.4.3</version>
+    
+  <name>talltale</name>
+    
+  <description>A CLJ/CLJS generator lib for fake data</description>
+    
+  <url>https://github.com/jgrodziski/talltale</url>
+    
+  <licenses>
+        
+    <license>
+            
+      <name>Eclipse Public License</name>
+            
+      <url>http://www.eclipse.org/legal/epl-v10.html</url>
+          
+    </license>
+      
+  </licenses>
+    
+  <scm>
+        
+    <url>https://github.com/jgrodziski/talltale</url>
+        
+    <connection>scm:git:git://github.com/jgrodziski/talltale.git</connection>
+        
+    <developerConnection>scm:git:ssh://git@github.com/jgrodziski/talltale.git</developerConnection>
+        
+    <tag>a5d596a2b38b48ee3afb9a368137301bfcde72f9</tag>
+      
+  </scm>
+    
+  <build>
+        
+    <sourceDirectory>resources</sourceDirectory>
+        
+    <testSourceDirectory>test</testSourceDirectory>
+        
+    <resources>
+            
+      <resource>
+                
+        <directory>src</directory>
+              
+      </resource>
+          
+    </resources>
+        
+    <testResources>
+            
+      <testResource>
+                
+        <directory>resources</directory>
+              
+      </testResource>
+          
+    </testResources>
+        
+    <directory>target</directory>
+        
+    <outputDirectory>target/classes</outputDirectory>
+        
+    <plugins/>
+      
+  </build>
+    
+  <distributionManagement>
+          
+    <repository>
+                
+      <id>clojars</id>
+                
+      <name>Clojars repository</name>
+                
+      <url>https://clojars.org/repo</url>
+            
+    </repository>
+      
+  </distributionManagement>
+    
+
+  
+  <repositories>
+    <repository>
+      <id>clojars</id>
+      <url>https://repo.clojars.org/</url>
+    </repository>
+  </repositories>
+    
+  <dependencyManagement>
+        
+    <dependencies/>
+      
+  </dependencyManagement>
+    
+  <dependencies>
+    <dependency>
+      <groupId>org.clojure</groupId>
+      <artifactId>clojure</artifactId>
+      <version>RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.clojure</groupId>
+      <artifactId>core.async</artifactId>
+      <version>0.4.490</version>
+    </dependency>
+    <dependency>
+      <groupId>clojure.java-time</groupId>
+      <artifactId>clojure.java-time</artifactId>
+      <version>0.3.2</version>
+    </dependency>
+    <dependency>
+      <groupId>tick</groupId>
+      <artifactId>tick</artifactId>
+      <version>0.4.14-alpha</version>
+    </dependency>
+    <dependency>
+      <groupId>com.lucasbradstreet</groupId>
+      <artifactId>cljs-uuid-utils</artifactId>
+      <version>1.0.2</version>
+    </dependency>
+    <dependency>
+      <groupId>tongue</groupId>
+      <artifactId>tongue</artifactId>
+      <version>0.2.6</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-artifact</artifactId>
+      <version>3.6.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.clojure</groupId>
+      <artifactId>test.check</artifactId>
+      <version>0.10.0-alpha4</version>
+    </dependency>
+  </dependencies>
+  
+</project>
